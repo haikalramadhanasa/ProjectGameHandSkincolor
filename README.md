@@ -23,5 +23,5 @@ Pastikan pustaka Python berikut terinstall sebelum menjalankan game:
 pip install opencv-python numpy
 
 ```
-
+## Demo game full
 [![Demo video](https://img.youtube.com/vi/sUYIczWBZQQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=sUYIczWBZQQ)
