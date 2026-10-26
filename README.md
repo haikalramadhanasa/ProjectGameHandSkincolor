@@ -1,2 +1,2 @@
 # ProjectGameHandSkincolor
-project game melempar bola mediapipe deteksi warna kulit tangan 
+project game melempar fumo ke keranjang
