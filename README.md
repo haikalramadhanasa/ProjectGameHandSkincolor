@@ -21,3 +21,6 @@ Pastikan pustaka Python berikut terinstall sebelum menjalankan game:
 
 ```bash
 pip install opencv-python numpy
+
+
+[![Demo video](https://img.youtube.com/vi/sUYIczWBZQQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=sUYIczWBZQQ)
