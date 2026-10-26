@@ -235,11 +235,11 @@ while True:
 
     # --- 3. VISUALISASI KOTAK DI FRAME KAMERA ---
     cv2.rectangle(frame, (box1_x1, box1_y1), (box1_x2, box1_y2), (0, 255, 255), 2)
-    cv2.putText(frame, "1. CHARGE / THROW", (box1_x1 - 10, box1_y1 - 10),
+    cv2.putText(frame, "Kontrol power", (box1_x1 - 10, box1_y1 - 10),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 255, 255), 1)
 
     cv2.rectangle(frame, (box2_x1, box2_y1), (box2_x2, box2_y2), (255, 0, 255), 2)
-    cv2.putText(frame, "2. KONTROL ARAH", (box2_x1 - 10, box2_y1 - 10),
+    cv2.putText(frame, "Kontrol arah", (box2_x1 - 10, box2_y1 - 10),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.45, (255, 0, 255), 1)
 
     # --- 4. CANVAS GAMEPLAY ----
@@ -297,11 +297,6 @@ while True:
             cv2.line(game_canvas, (prev_x, prev_y), (curr_x, curr_y), (255, 165, 0), 2, cv2.LINE_AA)
             prev_x, prev_y = curr_x, curr_y
 
-        cv2.putText(game_canvas, "Prediksi Jalur Parabola", (start_x, start_y + 25),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 165, 0), 1)
-
-        cv2.putText(game_canvas, "-> Tunjuk Struk Putih untuk Lempar!", (w + 30, h - 25),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.48, (0, 255, 255), 1)
 
     elif game_state in ["THROWING", "STOPPED"]:
         status_str = "fumo melayang" if game_state == "THROWING" else "Fumo mendarat (Press 'R' to reset)"
